@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+
+}
 .container{
     width: 980px;
     margin: 0 auto;
 }
 
 nav{
-    width: auto;
+    width: 100vw;
     height: 10%;
     display: flex;
     justify-content: space-between;
@@ -40,6 +46,7 @@ ul li{
     width: 120px;
     height: 70px;
     list-style-type: none;
+    margin: 10px;
 }
 
 .logo h1{
@@ -73,5 +80,10 @@ img{
     width: 380px;
     height: auto;
 
+}
+
+.grid-1{
+    width: 300px;
+    margin: auto;
 }
 
