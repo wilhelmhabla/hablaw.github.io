@@ -74,16 +74,51 @@ li:hover{
     display: flex;
     align-items: center;
     column-gap: 50px;
+    row-gap: 50px;
 }
 
 img{
     width: 380px;
     height: auto;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-1{
     width: 300px;
     margin: auto;
+    padding: 50px;
+    background-color: #404040;
+    width: 100vw;
+    height: 20%;
+    row-gap: 50px;
+    column-gap: 50px;
+    text-align: center;
 }
 
+.consul{
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #404040;
+    padding: 25px;
+
+}
