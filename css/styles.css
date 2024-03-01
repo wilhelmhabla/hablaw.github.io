@@ -25,6 +25,13 @@ nav{
 
 .logo{
     width: 30%;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logonav{
+    width: 50px;
 }
 
 .navbar-links{
