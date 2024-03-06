@@ -84,8 +84,26 @@ li:hover{
     row-gap: 50px;
 }
 
+.grid-3-columns{
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
 img{
     width: 380px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.proc-img{
+    width: auto;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -97,6 +115,17 @@ img{
     padding: 50px;
     background-color: #404040;
     width: 100vw;
+    height: 20%;
+    row-gap: 50px;
+    column-gap: 50px;
+    text-align: center;
+}
+
+.grid-1-nobg{
+    width: auto;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
     height: 20%;
     row-gap: 50px;
     column-gap: 50px;
