@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
     background-color: whitesmoke;
 
 }
-.container{
+main{
     width: 980px;
     margin: 0 auto;
 }
@@ -31,7 +32,7 @@ nav{
 }
 
 .logonav{
-    width: 50px;
+    width: 450px;
 }
 
 .navbar-links{
@@ -103,11 +104,21 @@ img{
 }
 
 .proc-img{
-    width: auto;
+    width: 300px;
     height: auto;
     align-items: center;
     justify-content: center;
 }
+.items{
+    text-align:center;
+    margin:50px auto;}
+    
+    
+    .items figure{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;}
 
 .grid-1{
     width: 300px;
