@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-color: #d0f4f1;
 
 }
 main{
@@ -25,7 +25,7 @@ nav{
 }
 
 @media screen and (max-width: 960px) {
-    .logonav, .navbar-links, img, h1, p, .grid-2-columns{
+    .logonav, .navbar-links, img, h1, p, .grid-2-columns, .grid-1-nobg, .container, .content{
         flex: 100%;
         max-width: 80%;
         flex-direction: column;
@@ -33,7 +33,7 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-    .logonav, .navbar-links, img, h1, p, .grid-2-columns{
+    .logonav, .navbar-links, img, h1, p, .grid-2-columns, .grid-1-nobg, .container, .content{
         flex: 100%;
         max-width: 100%;
         flex-direction: column;
@@ -49,6 +49,7 @@ nav{
 
 .logonav{
     width: 450px;
+    box-shadow: none;
 }
 
 .navbar-links{
@@ -118,6 +119,7 @@ img{
     height: auto;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .proc-img{
@@ -125,7 +127,13 @@ img{
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    margin: 25px;
+}
+
+figcaption{
+    font-size: 16px;
+    font-weight: 600;
+    color:#05998D;
 }
 
 .items{
@@ -152,14 +160,23 @@ img{
 }
 
 .grid-1-nobg{
-    width: auto;
-    max-width: 850px;
+    width: 850px;
     margin: auto;
     padding: 50px;
     height: 20%;
     row-gap: 50px;
     column-gap: 50px;
     text-align: center;
+    background-color: #05998D;
+    color: whitesmoke;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 60px 40px 40px;
+}
+
+.drquote{
+    text-align: center;
+    align-items: center;
 }
 
 .consul{
@@ -170,6 +187,7 @@ img{
 
 h1{
     margin-bottom: 20px;
+    color: #05998D;
 }
 
 .ttitle{
@@ -181,6 +199,7 @@ h1{
 
 h2{
     margin-bottom: 20px;
+    color: #05998D;
 }
 
 p{
@@ -192,7 +211,6 @@ p{
 
 .testimonials{
     padding: 40px 0;
-    background: #f1f1f1;
     color: #434343;
     text-align: center;
 }
@@ -227,6 +245,8 @@ p{
 .testimonial{
     background: #fff;
     padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial img{
@@ -255,6 +275,79 @@ p{
     }
 }
 
+/*contact page*/
+
+.contact-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.img-contact{
+    object-fit: cover;
+    width: 400px;
+    height: 230px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    width: 80%;
+    background: whitesmoke;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 30px;
+    color: #05998D;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+}
+
+.container .content .right-side{
+    width: 60%;
+}
+
+.topic-text{
+    font-size: 20px;
+    font-weight: 600;
+    color:#05998D;
+    margin-top: 50px;
+    text-align: center;
+}
 
 footer{
     align-items: center;
@@ -262,5 +355,6 @@ footer{
     color: white;
     background-color: #404040;
     padding: 25px;
-
+    width: 100vw;
+    
 }
